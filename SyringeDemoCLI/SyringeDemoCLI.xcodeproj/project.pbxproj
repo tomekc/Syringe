@@ -10,6 +10,9 @@
 		40B7663514CA23C70047F86F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B7663414CA23C70047F86F /* Foundation.framework */; };
 		40B7663814CA23C70047F86F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7663714CA23C70047F86F /* main.m */; };
 		40B7663C14CA23C70047F86F /* SyringeDemoCLI.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40B7663B14CA23C70047F86F /* SyringeDemoCLI.1 */; };
+		40B7664714CA255F0047F881 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F880 /* Car.m */; };
+		40B7664714CA255F0047F884 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F883 /* Engine.m */; };
+		40B7664714CA255F0047F887 /* Dashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F886 /* Dashboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		40B7663714CA23C70047F86F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40B7663A14CA23C70047F86F /* SyringeDemoCLI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyringeDemoCLI-Prefix.pch"; sourceTree = "<group>"; };
 		40B7663B14CA23C70047F86F /* SyringeDemoCLI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SyringeDemoCLI.1; sourceTree = "<group>"; };
+		40B7664714CA255F0047F880 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		40B7664714CA255F0047F882 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		40B7664714CA255F0047F883 /* Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		40B7664714CA255F0047F885 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		40B7664714CA255F0047F886 /* Dashboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dashboard.m; sourceTree = "<group>"; };
+		40B7664714CA255F0047F888 /* Dashboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dashboard.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +85,7 @@
 				40B7663714CA23C70047F86F /* main.m */,
 				40B7663B14CA23C70047F86F /* SyringeDemoCLI.1 */,
 				40B7663914CA23C70047F86F /* Supporting Files */,
+				40B7664714CA255F0047F87F /* Sample */,
 			);
 			path = SyringeDemoCLI;
 			sourceTree = "<group>";
@@ -86,6 +96,19 @@
 				40B7663A14CA23C70047F86F /* SyringeDemoCLI-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40B7664714CA255F0047F87F /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				40B7664714CA255F0047F888 /* Dashboard.h */,
+				40B7664714CA255F0047F886 /* Dashboard.m */,
+				40B7664714CA255F0047F885 /* Engine.h */,
+				40B7664714CA255F0047F883 /* Engine.m */,
+				40B7664714CA255F0047F882 /* Car.h */,
+				40B7664714CA255F0047F880 /* Car.m */,
+			);
+			path = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B7663814CA23C70047F86F /* main.m in Sources */,
+				40B7664714CA255F0047F881 /* Car.m in Sources */,
+				40B7664714CA255F0047F884 /* Engine.m in Sources */,
+				40B7664714CA255F0047F887 /* Dashboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +253,7 @@
 				40B7664114CA23C70047F86F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
