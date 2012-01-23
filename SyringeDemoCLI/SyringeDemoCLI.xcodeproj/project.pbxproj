@@ -13,6 +13,10 @@
 		40B7664714CA255F0047F881 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F880 /* Car.m */; };
 		40B7664714CA255F0047F884 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F883 /* Engine.m */; };
 		40B7664714CA255F0047F887 /* Dashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F886 /* Dashboard.m */; };
+		40EC7E1D14CE1B9B0097FD3A /* BeanFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1414CE1B9B0097FD3A /* BeanFactory.m */; };
+		40EC7E1E14CE1B9B0097FD3A /* NSObject+SyringeExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1714CE1B9B0097FD3A /* NSObject+SyringeExtras.m */; };
+		40EC7E1F14CE1B9B0097FD3A /* SRBeanCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1914CE1B9B0097FD3A /* SRBeanCache.m */; };
+		40EC7E2014CE1B9B0097FD3A /* SRClasspathScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1B14CE1B9B0097FD3A /* SRClasspathScanner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +44,16 @@
 		40B7664714CA255F0047F885 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
 		40B7664714CA255F0047F886 /* Dashboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dashboard.m; sourceTree = "<group>"; };
 		40B7664714CA255F0047F888 /* Dashboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dashboard.h; sourceTree = "<group>"; };
+		40EC7E1314CE1B9B0097FD3A /* BeanFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeanFactory.h; sourceTree = "<group>"; };
+		40EC7E1414CE1B9B0097FD3A /* BeanFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeanFactory.m; sourceTree = "<group>"; };
+		40EC7E1514CE1B9B0097FD3A /* Injectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injectable.h; sourceTree = "<group>"; };
+		40EC7E1614CE1B9B0097FD3A /* NSObject+SyringeExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SyringeExtras.h"; sourceTree = "<group>"; };
+		40EC7E1714CE1B9B0097FD3A /* NSObject+SyringeExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SyringeExtras.m"; sourceTree = "<group>"; };
+		40EC7E1814CE1B9B0097FD3A /* SRBeanCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBeanCache.h; sourceTree = "<group>"; };
+		40EC7E1914CE1B9B0097FD3A /* SRBeanCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBeanCache.m; sourceTree = "<group>"; };
+		40EC7E1A14CE1B9B0097FD3A /* SRClasspathScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClasspathScanner.h; sourceTree = "<group>"; };
+		40EC7E1B14CE1B9B0097FD3A /* SRClasspathScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRClasspathScanner.m; sourceTree = "<group>"; };
+		40EC7E1C14CE1B9B0097FD3A /* Syringe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Syringe.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,7 @@
 		40B7662514CA23C70047F86F = {
 			isa = PBXGroup;
 			children = (
+				40EC7E1214CE1B9B0097FD3A /* SyringeCore */,
 				40B7663614CA23C70047F86F /* SyringeDemoCLI */,
 				40B7663314CA23C70047F86F /* Frameworks */,
 				40B7663114CA23C70047F86F /* Products */,
@@ -109,6 +124,24 @@
 				40B7664714CA255F0047F880 /* Car.m */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		40EC7E1214CE1B9B0097FD3A /* SyringeCore */ = {
+			isa = PBXGroup;
+			children = (
+				40EC7E1314CE1B9B0097FD3A /* BeanFactory.h */,
+				40EC7E1414CE1B9B0097FD3A /* BeanFactory.m */,
+				40EC7E1514CE1B9B0097FD3A /* Injectable.h */,
+				40EC7E1614CE1B9B0097FD3A /* NSObject+SyringeExtras.h */,
+				40EC7E1714CE1B9B0097FD3A /* NSObject+SyringeExtras.m */,
+				40EC7E1814CE1B9B0097FD3A /* SRBeanCache.h */,
+				40EC7E1914CE1B9B0097FD3A /* SRBeanCache.m */,
+				40EC7E1A14CE1B9B0097FD3A /* SRClasspathScanner.h */,
+				40EC7E1B14CE1B9B0097FD3A /* SRClasspathScanner.m */,
+				40EC7E1C14CE1B9B0097FD3A /* Syringe.h */,
+			);
+			name = SyringeCore;
+			path = ../SyringeCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +198,10 @@
 				40B7664714CA255F0047F881 /* Car.m in Sources */,
 				40B7664714CA255F0047F884 /* Engine.m in Sources */,
 				40B7664714CA255F0047F887 /* Dashboard.m in Sources */,
+				40EC7E1D14CE1B9B0097FD3A /* BeanFactory.m in Sources */,
+				40EC7E1E14CE1B9B0097FD3A /* NSObject+SyringeExtras.m in Sources */,
+				40EC7E1F14CE1B9B0097FD3A /* SRBeanCache.m in Sources */,
+				40EC7E2014CE1B9B0097FD3A /* SRClasspathScanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
