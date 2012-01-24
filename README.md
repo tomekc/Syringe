@@ -4,11 +4,9 @@
 
 ----
 
-## Motivation
+Syringe is ultra-lightweight, simplistic dependency injection framework for Objective-C. It is heavily inspired by similar tools from Java world, like [Spring](http://www.springframework.org) or [Google Guice](http://code.google.com/p/google-guice/).
 
-In Java world, choice of tools and libraries is huge. There are couple of Dependency Injection frameworks, most notable are [Spring](http://www.springframework.org) and [Google Guice](http://code.google.com/p/google-guice/).
-
-More Mac OS X and iOS apps become complex, the need for Dependency Injection is stronger.
+Syringe is very simple to use. Classes you want to be injected just need to implement one empty protocol. There is no configuration; framework magically discovers all injectable objects, and eagerly creates instance cache. See below for installation instructions.
 
 ## What is dependency injection?
 
@@ -67,6 +65,9 @@ Syringe does not support constructors with parameters, only bare alloc/init pair
 
 And implement mandatory afterPropertiesSet: method. It will be called when object instance is created, and its collaborators wired and initialized.
 
+# To do
+
+Lazy initialization - work is in progress. 
 
 # Comments, praises
 
