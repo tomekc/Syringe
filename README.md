@@ -69,6 +69,6 @@ And implement mandatory afterPropertiesSet: method. It will be called when objec
 
 Lazy initialization - work is in progress. 
 
-# Comments, praises
+# Comments, praises, blames
 
 Feel free to contact me: tomek.cejner at gmail dot com
