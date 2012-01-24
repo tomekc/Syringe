@@ -7,8 +7,8 @@
 
 #import "SRClasspathScanner.h"
 #import "Syringe.h"
-#import <objc/objc-runtime.h>
-#import <objc/objc-class.h>
+#import <objc/runtime.h>
+
 
 
 @implementation SRClasspathScanner
@@ -68,9 +68,6 @@
             free(classes);
         }
     }
-
-
-    NSLog(@"Classes injectable: %@", injectableClasses);
 
 }
 

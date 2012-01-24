@@ -6,7 +6,7 @@
 
 
 #import "NSObject+SyringeExtras.h"
-
+#import "BeanFactory.h"
 
 @implementation NSObject (SyringeExtras)
 

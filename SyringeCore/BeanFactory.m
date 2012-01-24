@@ -8,6 +8,7 @@
 #import <objc/runtime.h>
 #import "BeanFactory.h"
 #import "SRClasspathScanner.h"
+#import "Syringe.h"
 
 
 @implementation BeanFactory
@@ -66,26 +67,17 @@ static BeanFactory *sharedSRBeanFactoryInstance = nil;
 }
 
 - (void)wireDependenciesOf:(id)_obj {
-    NSLog(@"Finding dependencies");
-    char nameBuffer[128];
-
     unsigned int count;
     Ivar *ivars = class_copyIvarList([_obj class], &count);
     if (count > 0) {
         for (int j = 0; j < count; j++) {
             Ivar var = ivars[j];
-            NSLog(@"ivar %s %s", ivar_getName(var), ivar_getTypeEncoding(var));
             NSString *typename = [self getClassNameOfIvar:var];
-            NSLog(@"Type: %@", typename);
-
             id object = [beanCache lookupByName:typename];
             if (object) {
                 object_setIvar(_obj, var, object);
             }
-
         }
-
-
         free(ivars);
     }
 
