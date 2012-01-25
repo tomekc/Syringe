@@ -1,9 +1,8 @@
 //
-//  Created by tomek on 20.01.2012.
+//  Syringe Framework
+//  Copyright (C) 2012 Tomasz Cejner
+//  See LICENSE for details.
 //
-// To change the template use AppCode | Preferences | File Templates.
-//
-
 
 #import <objc/runtime.h>
 #import "BeanFactory.h"
