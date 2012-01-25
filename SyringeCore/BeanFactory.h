@@ -17,6 +17,7 @@
 */
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 #import "SRBeanCache.h"
 
 
@@ -41,5 +42,6 @@
 
 - (id)getObjectOfClass:(Class)_class;
 
+- (NSString *)getClassNameOfIvar:(Ivar)var;
 
 @end

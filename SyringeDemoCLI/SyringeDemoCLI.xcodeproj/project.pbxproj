@@ -13,11 +13,28 @@
 		40B7664714CA255F0047F881 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F880 /* Car.m */; };
 		40B7664714CA255F0047F884 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F883 /* Engine.m */; };
 		40B7664714CA255F0047F887 /* Dashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7664714CA255F0047F886 /* Dashboard.m */; };
+		40EAA42114D0968300D902BE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EAA42014D0968300D902BE /* SenTestingKit.framework */; };
+		40EAA42314D0968300D902BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EAA42214D0968300D902BE /* Cocoa.framework */; };
+		40EAA42D14D0968300D902BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40EAA42B14D0968300D902BE /* InfoPlist.strings */; };
+		40EAA43014D0968300D902BE /* SyringeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EAA42F14D0968300D902BE /* SyringeTests.m */; };
+		40EAA44214D09F0700D902BE /* BeanFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1414CE1B9B0097FD3A /* BeanFactory.m */; };
+		40EAA44314D09F2100D902BE /* SRBeanCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1914CE1B9B0097FD3A /* SRBeanCache.m */; };
+		40EAA44414D09F2100D902BE /* SRClasspathScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1B14CE1B9B0097FD3A /* SRClasspathScanner.m */; };
 		40EC7E1D14CE1B9B0097FD3A /* BeanFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1414CE1B9B0097FD3A /* BeanFactory.m */; };
 		40EC7E1E14CE1B9B0097FD3A /* NSObject+SyringeExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1714CE1B9B0097FD3A /* NSObject+SyringeExtras.m */; };
 		40EC7E1F14CE1B9B0097FD3A /* SRBeanCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1914CE1B9B0097FD3A /* SRBeanCache.m */; };
 		40EC7E2014CE1B9B0097FD3A /* SRClasspathScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC7E1B14CE1B9B0097FD3A /* SRClasspathScanner.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40EAA43614D0970200D902BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40B7662714CA23C70047F86F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40B7662F14CA23C70047F86F;
+			remoteInfo = SyringeDemoCLI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		40B7662E14CA23C70047F86F /* CopyFiles */ = {
@@ -44,6 +61,18 @@
 		40B7664714CA255F0047F885 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
 		40B7664714CA255F0047F886 /* Dashboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dashboard.m; sourceTree = "<group>"; };
 		40B7664714CA255F0047F888 /* Dashboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dashboard.h; sourceTree = "<group>"; };
+		40EAA41F14D0968200D902BE /* SyringeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyringeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40EAA42014D0968300D902BE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		40EAA42214D0968300D902BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		40EAA42514D0968300D902BE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		40EAA42614D0968300D902BE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		40EAA42714D0968300D902BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40EAA42A14D0968300D902BE /* SyringeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SyringeTests-Info.plist"; sourceTree = "<group>"; };
+		40EAA42C14D0968300D902BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40EAA42E14D0968300D902BE /* SyringeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyringeTests.h; sourceTree = "<group>"; };
+		40EAA42F14D0968300D902BE /* SyringeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyringeTests.m; sourceTree = "<group>"; };
+		40EAA43114D0968300D902BE /* SyringeTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyringeTests-Prefix.pch"; sourceTree = "<group>"; };
+		40EAA44614D09F7300D902BE /* SyringeLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyringeLogging.h; sourceTree = "<group>"; };
 		40EC7E1314CE1B9B0097FD3A /* BeanFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeanFactory.h; sourceTree = "<group>"; };
 		40EC7E1414CE1B9B0097FD3A /* BeanFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeanFactory.m; sourceTree = "<group>"; };
 		40EC7E1514CE1B9B0097FD3A /* Injectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injectable.h; sourceTree = "<group>"; };
@@ -65,6 +94,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40EAA41B14D0968200D902BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EAA42114D0968300D902BE /* SenTestingKit.framework in Frameworks */,
+				40EAA42314D0968300D902BE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +111,7 @@
 			children = (
 				40EC7E1214CE1B9B0097FD3A /* SyringeCore */,
 				40B7663614CA23C70047F86F /* SyringeDemoCLI */,
+				40EAA42814D0968300D902BE /* SyringeTests */,
 				40B7663314CA23C70047F86F /* Frameworks */,
 				40B7663114CA23C70047F86F /* Products */,
 			);
@@ -82,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				40B7663014CA23C70047F86F /* SyringeDemoCLI */,
+				40EAA41F14D0968200D902BE /* SyringeTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				40B7663414CA23C70047F86F /* Foundation.framework */,
+				40EAA42014D0968300D902BE /* SenTestingKit.framework */,
+				40EAA42214D0968300D902BE /* Cocoa.framework */,
+				40EAA42414D0968300D902BE /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +169,36 @@
 			path = Sample;
 			sourceTree = "<group>";
 		};
+		40EAA42414D0968300D902BE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40EAA42514D0968300D902BE /* AppKit.framework */,
+				40EAA42614D0968300D902BE /* CoreData.framework */,
+				40EAA42714D0968300D902BE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		40EAA42814D0968300D902BE /* SyringeTests */ = {
+			isa = PBXGroup;
+			children = (
+				40EAA42E14D0968300D902BE /* SyringeTests.h */,
+				40EAA42F14D0968300D902BE /* SyringeTests.m */,
+				40EAA42914D0968300D902BE /* Supporting Files */,
+			);
+			path = SyringeTests;
+			sourceTree = "<group>";
+		};
+		40EAA42914D0968300D902BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40EAA42A14D0968300D902BE /* SyringeTests-Info.plist */,
+				40EAA42B14D0968300D902BE /* InfoPlist.strings */,
+				40EAA43114D0968300D902BE /* SyringeTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		40EC7E1214CE1B9B0097FD3A /* SyringeCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +212,7 @@
 				40EC7E1A14CE1B9B0097FD3A /* SRClasspathScanner.h */,
 				40EC7E1B14CE1B9B0097FD3A /* SRClasspathScanner.m */,
 				40EC7E1C14CE1B9B0097FD3A /* Syringe.h */,
+				40EAA44614D09F7300D902BE /* SyringeLogging.h */,
 			);
 			name = SyringeCore;
 			path = ../SyringeCore;
@@ -164,6 +238,25 @@
 			productReference = 40B7663014CA23C70047F86F /* SyringeDemoCLI */;
 			productType = "com.apple.product-type.tool";
 		};
+		40EAA41E14D0968200D902BE /* SyringeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40EAA43414D0968300D902BE /* Build configuration list for PBXNativeTarget "SyringeTests" */;
+			buildPhases = (
+				40EAA41A14D0968200D902BE /* Sources */,
+				40EAA41B14D0968200D902BE /* Frameworks */,
+				40EAA41C14D0968200D902BE /* Resources */,
+				40EAA41D14D0968200D902BE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40EAA43714D0970200D902BE /* PBXTargetDependency */,
+			);
+			name = SyringeTests;
+			productName = SyringeTests;
+			productReference = 40EAA41F14D0968200D902BE /* SyringeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,9 +278,37 @@
 			projectRoot = "";
 			targets = (
 				40B7662F14CA23C70047F86F /* SyringeDemoCLI */,
+				40EAA41E14D0968200D902BE /* SyringeTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40EAA41C14D0968200D902BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EAA42D14D0968300D902BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40EAA41D14D0968200D902BE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40B7662C14CA23C70047F86F /* Sources */ = {
@@ -205,7 +326,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40EAA41A14D0968200D902BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EAA44314D09F2100D902BE /* SRBeanCache.m in Sources */,
+				40EAA44414D09F2100D902BE /* SRClasspathScanner.m in Sources */,
+				40EAA44214D09F0700D902BE /* BeanFactory.m in Sources */,
+				40EAA43014D0968300D902BE /* SyringeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40EAA43714D0970200D902BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40B7662F14CA23C70047F86F /* SyringeDemoCLI */;
+			targetProxy = 40EAA43614D0970200D902BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40EAA42B14D0968300D902BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40EAA42C14D0968300D902BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		40B7663D14CA23C70047F86F /* Debug */ = {
@@ -271,6 +422,30 @@
 			};
 			name = Release;
 		};
+		40EAA43214D0968300D902BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SyringeTests/SyringeTests-Prefix.pch";
+				INFOPLIST_FILE = "SyringeTests/SyringeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		40EAA43314D0968300D902BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SyringeTests/SyringeTests-Prefix.pch";
+				INFOPLIST_FILE = "SyringeTests/SyringeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -291,6 +466,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		40EAA43414D0968300D902BE /* Build configuration list for PBXNativeTarget "SyringeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EAA43214D0968300D902BE /* Debug */,
+				40EAA43314D0968300D902BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

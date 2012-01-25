@@ -59,7 +59,7 @@ static BeanFactory *sharedSRBeanFactoryInstance = nil;
 - (NSString *)getClassNameOfIvar:(Ivar)var {
     const char *ivarType = ivar_getTypeEncoding(var);
     if (strlen(ivarType) > 3 && ivarType[0] == '@' && ivarType[1] == '"') {
-        return [NSString stringWithCString:ivarType + 2 length:strlen(ivarType) - 3];
+        return [NSString stringWithCString:(ivarType + 2) length:(strlen(ivarType) - 3)];
     } else {
         return nil;
     }

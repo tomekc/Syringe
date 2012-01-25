@@ -7,7 +7,7 @@
 
 
 #import "SRBeanCache.h"
-//#import <objc/objc-runtime.h>
+#import "SyringeLogging.h"
 #import <objc/runtime.h>
 
 
