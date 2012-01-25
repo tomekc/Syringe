@@ -29,22 +29,22 @@ static BeanFactory *sharedSRBeanFactoryInstance = nil;
 }
 
 - (void)initializeBeans {
-    NSLog(@"Syringe is bootstrapping..");
+    SRLOG(@"Syringe is bootstrapping..");
     [classpathScanner scanSclasses];
 
-    NSLog(@"Eagerly initializing all annotated classes..");
+    SRLOG(@"Eagerly initializing all annotated classes..");
     // eagerly initialize all objects
     for (NSString *name in classpathScanner.injectableClasses) {
         [beanCache getObjectOfType:name];
     }
 
-    NSLog(@"Wiring all dependencies..");
+    SRLOG(@"Wiring all dependencies..");
     // now connect all dependencies
     for (NSString *name in classpathScanner.injectableClasses) {
         [self wireDependenciesOf:[beanCache getObjectOfType:name]];
     }
 
-    NSLog(@"Post initialization..");
+    SRLOG(@"Post initialization..");
     NSArray *classNames = [beanCache allCachedObjects];
     for (NSString *name in classNames) {
         id object = [beanCache lookupByName:name];
@@ -53,7 +53,7 @@ static BeanFactory *sharedSRBeanFactoryInstance = nil;
         }
     }
     
-    NSLog(@"Syringe startup complete.");
+    SRLOG(@"Syringe startup complete.");
 }
 
 

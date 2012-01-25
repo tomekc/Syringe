@@ -15,25 +15,6 @@
 
 @synthesize injectableClasses;
 
-- (void)listIvarsOf:(Class)_class {
-
-    unsigned int  count;
-    Ivar *ivars = class_copyIvarList(_class, &count);
-    if (count > 0) {
-        for (int j=0; j<count; j++) {
-            Ivar var = ivars[j];
-
-
-            NSLog(@"ivar %s %s", ivar_getName(var), ivar_getTypeEncoding(var));
-            
-        }
-        
-        
-        free(ivars);
-    }
-
-}
-
 
 - (NSString *)nameOfClass:(Class)c {
     return [NSString stringWithCString:class_getName(c) encoding:NSUTF8StringEncoding];

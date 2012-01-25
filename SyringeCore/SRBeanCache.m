@@ -31,7 +31,7 @@
 }
 
 - (id)createInstanceOf:(NSString *)clasName {
-    Class klaz = objc_getClass([clasName cString]);
+    Class klaz = objc_getClass([clasName UTF8String]);
     if (klaz != nil) {
         id instance = class_createInstance(klaz, 0);
         return [instance init];
@@ -43,7 +43,7 @@
 - (id)getObjectOfType:(NSString *)clasName {
     id cached = [cache objectForKey:clasName];
     if (cached == nil) {
-        NSLog(@"Initializing instance of class %@", clasName);
+        SRLOG(@"Initializing instance of class %@", clasName);
         id instance = [self createInstanceOf:clasName];
         [self cacheInstance:instance ofType:clasName];
         return instance;
@@ -54,7 +54,7 @@
 
 - (id)getObjectOfClass:(Class)klaz
 {
-    NSString *name = [NSString stringWithCString:class_getName(klaz)];
+    NSString *name = [NSString stringWithCString:class_getName(klaz) encoding:NSISOLatin1StringEncoding];
     return [self getObjectOfType:name];
 }
 

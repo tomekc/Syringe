@@ -21,3 +21,10 @@
 #import "BeanFactory.h"
 
 #define inject(X) [[BeanFactory sharedBeanFactory] getObjectOfClass:[X class]]
+
+// The general purpose logger. This ignores logging levels.
+#ifdef DEBUG
+  #define SRLOG(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+  #define SRLOG(xx, ...)  ((void)0)
+#endif // #ifdef DEBUG
