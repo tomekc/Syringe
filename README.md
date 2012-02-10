@@ -10,7 +10,9 @@ Syringe is very simple to use. Classes you want to be injected just need to impl
 
 ## What is dependency injection?
 
-If you have Java background, you probably know what Spring Framework is. And you probably miss it on iOS. If you are iOS programmer and hear this term first time, have a [educational reading](http://en.wikipedia.org/wiki/Dependency_injection) before moving on.
+It is sometimes called an implementation of "The Hollywood Principle". Hollywood Principle is named after response given to amateur wanna-be actors after audition: "don't call us, we call you". But contrary to Hollywood producers, DI frameworks will keep the promise. Imagine class Car and its close collaborator, Engine. In old times, you would create one class, and in Car's constructor for example, one will create a instance of Engine. And it works perfectly, but only in programming book examples. Often you will have many more collaborators, and soon you will need to provide the same instance of Engine to other classes.
+
+And here devil starts smiling and whispering to your ear: "Dear developer, having trouble with this network of connections between classes? Try singleton pattern, you won't have to worry about passing once created instance to all interested parties". And until recently, most Objective-C developers listened to Singleton Devil.
 
 ## Usage
 
